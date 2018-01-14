@@ -1,0 +1,9 @@
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\bin\Debug\test_tr.exe.config
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\bin\Debug\test_tr.exe
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\bin\Debug\test_tr.pdb
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\obj\Debug\test_tr.csprojResolveAssemblyReference.cache
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\obj\Debug\test_tr.Form1.resources
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\obj\Debug\test_tr.Properties.Resources.resources
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\obj\Debug\test_tr.csproj.GenerateResource.Cache
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\obj\Debug\test_tr.exe
+c:\users\tosha\documents\visual studio 2015\Projects\test_tr\test_tr\obj\Debug\test_tr.pdb
