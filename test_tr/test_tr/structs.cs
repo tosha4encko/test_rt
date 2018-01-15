@@ -6,19 +6,15 @@ using System.Threading.Tasks;
 
 namespace test_tr
 {
-    public struct ray
+    public struct intersection
     {
-        public Vector begin;
-        public Vector dir;
+        public Vector point;
         public double dist;
 
-        public ray(Vector begin, Vector dir)
+        public intersection(Vector p, double d)
         {
-            this.begin = begin;
-            this.dir = dir;
-            dist = -1;
+            point = p;
+            dist = d;
         }
-
-
     }
 }

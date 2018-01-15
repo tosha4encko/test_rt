@@ -1,3 +1,5 @@
+using System;
+
 namespace test_tr
 {
     public struct Vector {
@@ -9,12 +11,40 @@ namespace test_tr
             Z = z;
         }
 
+        public static double Dist(Vector u, Vector v)
+        {
+            return Math.Sqrt((u.X - v.X) * (u.X - v.X) +
+                             (u.Y - v.Y) * (u.Y - v.Y) +
+                             (u.Z - v.Z) * (u.Z - v.Z));
+        }
+
+        public static double DotProduct(Vector u, Vector v)
+        {
+            return  u.X * v.X + u.Y * v.Y + u.Z * v.Z;
+        }
+
+        public double Modul()
+        {
+            return Math.Sqrt(DotProduct(this, this));
+        }
+
+        // ”гол между векторами
+        public static double AngleBet(Vector u, Vector v)
+        {
+            return Math.Acos(DotProduct(u, v) / (u.Modul() * v.Modul()));
+        }
+
+        public static Vector operator -(Vector u, Vector v)
+        {
+            return u + (-v);
+        }
+
         public Vector Normalized() {
             return this / Len();
         }
 
         public double Len() {
-            return System.Math.Sqrt(X * X + Y * Y + Z * Z);
+            return Math.Sqrt(X * X + Y * Y + Z * Z);
         }
 
         public static Vector Reflect(Vector direction, Vector normal) {
@@ -40,14 +70,6 @@ namespace test_tr
             double z = a.Z + b.Z;
             return new Vector(x, y, z);
         }
-
-        public static Vector operator -(Vector a, Vector b) {
-            double x = a.X - b.X;
-            double y = a.Y - b.Y;
-            double z = a.Z - b.Z;
-            return new Vector(x, y, z);
-        }
-
         public static Vector operator -(Vector vec) {
             double x, y, z;
             x = -vec.X;
